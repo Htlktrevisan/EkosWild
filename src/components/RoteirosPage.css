@@ -1,0 +1,126 @@
+/* src/components/RoteirosPage.css */
+
+.roteiros-hero {
+  height: 50vh;
+  background-image: url('../assets/roteiros-hero-bg.jpg');
+  background-size: cover;
+  background-position: center 30%; /* Ajusta a imagem para mostrar mais o céu */
+}
+
+.info-bar {
+  background-color: var(--primary-green);
+  color: var(--light-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 100px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-icon {
+  font-size: 2.5rem;
+}
+
+.info-item h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.roteiros-grid-section {
+  background-color: #f0e9e4; /* Cor de fundo bege claro do design */
+}
+
+.roteiros-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas */
+  gap: 30px;
+}
+
+.roteiro-card {
+  background-color: var(--card-green);
+  color: var(--light-text);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.roteiro-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.roteiro-card-content {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+}
+
+.roteiro-card-date {
+  font-size: 1rem;
+  font-weight: 500;
+  flex-grow: 1; /* Empurra o preço pra baixo */
+}
+
+.roteiro-card-price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.roteiro-card-installments {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.detail-button {
+  background-color: #fff;
+  color: var(--dark-text);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.detail-button:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+/* Para telas menores (celular) */
+@media (max-width: 960px) {
+  .roteiros-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  }
+}
+
+@media (max-width: 640px) {
+  .roteiros-grid {
+    grid-template-columns: 1fr; /* 1 coluna */
+  }
+  .info-bar {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,46 @@
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Definindo variáveis de cor pra facilitar a vida */
+:root {
+  --primary-green: #04724D; /* Verde principal do site */
+  --dark-text: #333333;
+  --light-text: #FFFFFF;
+  --light-gray-bg: #f4f4f4;
+  --card-green: #0A5C36; /* Um verde um pouco mais escuro para os cards */
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light-gray-bg);
+  color: var(--dark-text);
+}
+
+/* Estilo geral para as seções */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    color: #666;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

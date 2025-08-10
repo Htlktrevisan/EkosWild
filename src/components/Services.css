@@ -1,0 +1,46 @@
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha em telas menores */
+}
+
+.service-card {
+    background-color: var(--card-green);
+    color: var(--light-text);
+    border-radius: 80px 80px 20px 20px; /* Bordas arredondadas do design */
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.service-card-image {
+    width: 250px;
+    height: 250px;
+    margin: 20px auto 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+.service-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-card-content {
+    padding: 20px;
+}
+
+.service-card-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.service-card-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}

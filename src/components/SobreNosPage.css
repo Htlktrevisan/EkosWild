@@ -1,0 +1,46 @@
+/* src/components/SobreNosPage.css */
+
+.about-hero {
+  height: 60vh;
+  background-image: url('../assets/about-hero-bg.jpg'); /* A imagem nova que você salvou */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end; /* Alinha o conteúdo na parte de baixo */
+  justify-content: center;
+}
+
+.about-hero-title-container {
+  background-color: var(--primary-green);
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.about-hero-title-container h1 {
+  color: var(--light-text);
+  font-size: 3rem;
+  margin: 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.about-content-section {
+  background-color: var(--primary-green);
+  color: var(--light-text);
+  text-align: left;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-content-section .container {
+    max-width: 800px;
+}
+
+.about-content-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
